@@ -1,0 +1,14 @@
+[jenkins]
+171.31.23.55 ansible_user=ubuntu
+
+
+[nginx]
+172.31.23.56
+
+[sonarqube]
+172.31.23.57 ansible_user=ubuntu
+
+
+[artifact_repository]
+172.31.23.58 ansible_user=ubuntu
+

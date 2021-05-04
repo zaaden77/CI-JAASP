@@ -1,0 +1,8 @@
+[tooling]
+host1 ansible_host=172.31.17.237
+
+[db]
+host2 ansible_host=172.31.23.6
+
+[todo]
+host3 ansible_host=172.31.26.61
