@@ -1,2 +1,2 @@
-# CI-JAASP
-Continous Integration With Jenkins | Ansible | Artifactory | Sonarqube | PHP
+# Jenkins-CI
+How to integrate Artifactory Repository, Sonarqube, Ansible with Jenkins and deploy applications
