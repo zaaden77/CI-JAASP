@@ -10,8 +10,7 @@ pipeline {
         }
       }
     }
-    }
-}
+    
 
 stage('Test') {
       steps {
@@ -20,8 +19,7 @@ stage('Test') {
         }
       }
     }
-    }
-}
+  
 
 stage('Package') {
       steps {
@@ -30,8 +28,7 @@ stage('Package') {
         }
       }
     }
-    }
-}
+    
 
 stage('Deploy') {
       steps {
@@ -40,8 +37,7 @@ stage('Deploy') {
         }
       }
     }
-    }
-}
+    
 
 stage('Clean up') {
       steps {
