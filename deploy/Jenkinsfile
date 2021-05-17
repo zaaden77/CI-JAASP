@@ -1,50 +1,16 @@
 pipeline {
     agent any
-
-
-  stages {
-    stage('Build') {
-      steps {
-        script {
-          sh 'echo "Building Stage"'
+    stages {
+      stage('SCM Checkout'){
+          steps{
+            git branch: 'main', url: 'https://github.com/zaaden77/Jenkins-CI.git' 
+      }
+    }
+    stage ('Execute Ansible'){
+        steps{
+          ansiblePlaybook credentialsId: 'ansible-slave-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory/dev', playbook: 'playbooks/site.yml'
         }
       }
     }
-    
+ }
 
-  stage('Test') {
-      steps {
-        script {
-          sh 'echo "Testing Stage"'
-        }
-      }
-    }
-  
-
-  stage('Package') {
-      steps {
-        script {
-          sh 'echo "Package Stage"'
-        }
-      }
-    }
-    
-
-  stage('Deploy') {
-      steps {
-        script {
-          sh 'echo "Deploy Stage"'
-        }
-      }
-    }
-    
-
-  stage('Clean up') {
-      steps {
-        script {
-          sh 'echo "Clean up Stage"'
-        }
-      }
-    }
-    }
-}
