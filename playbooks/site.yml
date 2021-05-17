@@ -13,32 +13,32 @@
   tags:
     - skip
 
-- name: include playbook for db server
-  import_playbook: ../static-assignments/db.yml
-  tags:
-    - skip
+# - name: include playbook for db server
+#   import_playbook: ../static-assignments/db.yml
+#   tags:
+#     - skip
 
-- name: Include playbook for tooling webserver
-  import_playbook: ../static-assignments/webservers.yml
-  tags:
-    - skip
+# - name: Include playbook for tooling webserver
+#   import_playbook: ../static-assignments/webservers.yml
+#   tags:
+#     - skip
 
-- name: include playbook for artifact_repository
-  import_playbook: ../static-assignments/artifactory.yml
-  tags:
-    - skip
+# - name: include playbook for artifact_repository
+#   import_playbook: ../static-assignments/artifactory.yml
+#   tags:
+#     - skip
 
-- name: import sonarqube playbook
-  import_playbook: ../static-assignments/sonarqube.yml
-  tags:
-    - skip
+# - name: import sonarqube playbook
+#   import_playbook: ../static-assignments/sonarqube.yml
+#   tags:
+#     - skip
 
-- name: include playbook for webserver-todo-php
-  import_playbook: ../static-assignments/webserver-todo-php.yml
-  tags:
-    - run
+# - name: include playbook for webserver-todo-php
+#   import_playbook: ../static-assignments/webserver-todo-php.yml
+#   tags:
+#     - run
 
-- name: include playbook for nginx reverse proxy
-  import_playbook: ../static-assignments/nginx.yml
-  tags:
-    - run
+# - name: include playbook for nginx reverse proxy
+#   import_playbook: ../static-assignments/nginx.yml
+#   tags:
+#     - run
