@@ -1,8 +1,9 @@
 [tooling]
-host1 ansible_host=172.31.17.237
+host1 ansible_host=172.31.17.237 ansible_ssh_user='ec2-user' 
 
 [db]
-host2 ansible_host=172.31.23.6
+host2 ansible_host=172.31.23.6 ansible_ssh_user='ec2-user' 
+
 
 [todo]
-host3 ansible_host=172.31.26.61
+host3 ansible_host=172.31.26.61 ansible_ssh_user='ec2-user' 
