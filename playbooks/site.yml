@@ -6,7 +6,7 @@
 - name: import the common playbook
   import_playbook: ../static-assignments/common.yml
   tags:
-    - skip
+    - run
 
 - name: include the env-vars playbook
   import_playbook: ../dynamic-assignments/env-vars.yml
