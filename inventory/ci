@@ -10,5 +10,5 @@
 
 
 [artifact_repository]
-172.31.23.58 ansible_user=ubuntu
+172.31.31.57 ansible_user=ubuntu
 
