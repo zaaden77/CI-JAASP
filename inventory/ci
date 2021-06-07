@@ -6,9 +6,9 @@
 172.31.23.56
 
 [sonarqube]
-172.31.23.57 ansible_user=ubuntu
+172.31.30.152 ansible_user=ubuntu
 
 
 [artifact_repository]
-172.31.31.57 ansible_user=ubuntu
+172.31.28.114 ansible_user=ubuntu
 
